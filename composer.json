@@ -11,7 +11,10 @@
         }
     ],
     "require": {
-        "pmvc/pmvc": "*"
+        "pmvc/pmvc": "*",
+        "pmvc-plugin/yo": "*",
+        "pmvc-plugin/default_forward": "*",
+        "pmvc-plugin/guid": "*"
     },
     "minimum-stability": "dev"
 }
