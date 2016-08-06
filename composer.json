@@ -1,0 +1,17 @@
+{
+    "name": "pmvc-app/session",
+    "description": "PMVC Session APP",
+    "type": "project",
+    "keywords": ["session", "pmvc", "plug-in"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hill",
+            "email": "hill@kimo.com"
+        }
+    ],
+    "require": {
+        "pmvc/pmvc": "*"
+    },
+    "minimum-stability": "dev"
+}
