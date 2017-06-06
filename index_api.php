@@ -11,6 +11,7 @@ $yo->get('/session/{id}', function($m, $f){
    $go = $m['dump'];
    $go->set('id',$id);
    $go->set('session',$session[$id]);
+   $go->set('ttl', $session->ttl($id));
    return $go;
 });
 

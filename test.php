@@ -40,7 +40,16 @@ class SessionAppTest extends PHPUnit_Framework_TestCase
 class FakeGuid extends \PMVC\PlugIn
 {
     function getDb(){
-        return true;
+        return new FakeSessionDb();
     }
 }
+
+class FakeSessionDb extends \PMVC\HashMap
+{
+    function ttl()
+    {
+        return 0;
+    }
+}
+
 
