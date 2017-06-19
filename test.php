@@ -22,7 +22,7 @@ class SessionAppTest extends PHPUnit_Framework_TestCase
             'REQUEST_URI'=>'/yo/session/xxid',
             'SCRIPT_NAME'=>'/yo/'
         ]);
-        $c->plugApp(['../'],[],'index_api');
+        $c->plugApp(['../'],[],'index_middleware');
         \PMVC\initPlugIn([
             'guid'=>[
                 _CLASS=>__NAMESPACE__.'\FakeGuid'
