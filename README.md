@@ -1,11 +1,10 @@
 [![Latest Stable Version](https://poser.pugx.org/pmvc-app/session/v/stable)](https://packagist.org/packages/pmvc-app/session) 
 [![Latest Unstable Version](https://poser.pugx.org/pmvc-app/session/v/unstable)](https://packagist.org/packages/pmvc-app/session) 
-[![Build Status](https://travis-ci.org/pmvc-app/session.svg?branch=master)](https://travis-ci.org/pmvc-app/session)
+[![CircleCI](https://circleci.com/gh/pmvc-app/session/tree/master.svg?style=svg)](https://circleci.com/gh/pmvc-app/session/tree/master)
 [![License](https://poser.pugx.org/pmvc-app/session/license)](https://packagist.org/packages/pmvc-app/session)
 [![Total Downloads](https://poser.pugx.org/pmvc-app/session/downloads)](https://packagist.org/packages/pmvc-app/session) 
 
 # PMVC Hello World Plugin 
-===============
 
 ## Install with Composer
 ### 1. Download composer

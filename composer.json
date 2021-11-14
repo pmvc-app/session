@@ -17,5 +17,8 @@
         "pmvc-plugin/guid": "*",
         "pmvc-plugin/session": "*"
     },
+    "require-dev": {
+        "pmvc-plugin/unit": "*"
+    },
     "minimum-stability": "dev"
 }

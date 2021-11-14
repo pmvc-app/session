@@ -6,7 +6,7 @@ ${_INIT_CONFIG}[_CLASS] = '\PMVC\Action';
 $yo=\PMVC\plug('yo');
 
 $yo->get('/session/{id}', function($m, $f){
-   $session = \PMVC\plug('guid')->getDb('session');
+   $session = \PMVC\plug('guid')->getModel('session');
    $id = $f['id'];
    $go = $m['dump'];
    $go->set('id',$id);
@@ -22,7 +22,7 @@ $yo->get('/session/{id}', function($m, $f){
 });
 
 $yo->post('/session/{id}', function($m, $f){
-   $session = \PMVC\plug('guid')->getDb('session');
+   $session = \PMVC\plug('guid')->getModel('session');
    $id = $f['id'];
    $session[$id] = $f['data'];
    $go = $m['dump'];
@@ -32,7 +32,7 @@ $yo->post('/session/{id}', function($m, $f){
 });
 
 $yo->delete('/session/{id}', function($m, $f){
-   $session = \PMVC\plug('guid')->getDb('session');
+   $session = \PMVC\plug('guid')->getModel('session');
    unset($session[$f['id']]);
    $go->set('id',$f['id']);
    $go->set('session',(string)$session[$f['id']]);

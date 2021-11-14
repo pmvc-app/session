@@ -2,13 +2,9 @@
 namespace PMVC\App\session;
 
 use PMVC;
-use PHPUnit_Framework_TestCase;
+use PMVC\TestCase;
 
-PMVC\Load::plug();
-PMVC\addPlugInFolders(['../']);
-PMVC\l(__DIR__.'/vendor/pmvc-plugin/controller/tests/resources/FakeView.php');
-
-class SessionAppTest extends PHPUnit_Framework_TestCase
+class SessionAppTest extends TestCase 
 {
     private $_app = 'session';
     
@@ -33,13 +29,14 @@ class SessionAppTest extends PHPUnit_Framework_TestCase
             'default_forward'=>null
         ]);
         $result = $c->process();
+        $this->assertTrue(!empty($result));
     }
 
 }
 
 class FakeGuid extends \PMVC\PlugIn
 {
-    function getDb(){
+    function getModel(){
         return new FakeSessionDb();
     }
 }
