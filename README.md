@@ -4,7 +4,7 @@
 [![License](https://poser.pugx.org/pmvc-app/session/license)](https://packagist.org/packages/pmvc-app/session)
 [![Total Downloads](https://poser.pugx.org/pmvc-app/session/downloads)](https://packagist.org/packages/pmvc-app/session) 
 
-# PMVC Hello World Plugin 
+# PMVC Session 
 
 ## Install with Composer
 ### 1. Download composer
